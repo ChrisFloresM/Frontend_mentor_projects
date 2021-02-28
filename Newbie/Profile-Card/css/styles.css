@@ -1,0 +1,104 @@
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --white: hsl(100, 100%, 100%);
+  --Dark-grey: hsl(0, 0%, 59%);
+  --slow-grey: hsl(0, 0%, 85%);
+}
+
+body {
+  background-color: var(--Dark-cyan);
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 18px;
+}
+
+.bg {
+  transform: scale(0.8);
+  position: fixed;
+}
+
+.bg-top {
+  top: -480px;
+  left: -200px;
+}
+
+.bg-bot {
+  bottom: -500px;
+  right: -250px;
+}
+
+.card {
+  width: 432px;
+  height: 390px;
+  margin: 0 30px;
+  z-index: 1;
+  background-color: var(--white);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.192);
+}
+
+.card__header {
+  background-image: url(../assets/bg-pattern-card.svg);
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 30%;
+}
+
+.card__profile-picture {
+  position: absolute;
+  bottom: 0;
+  transform: translateY(50%);
+  border: 4px solid var(--white);
+  border-radius: 50%;
+}
+
+.card__data {
+  height: 45%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.card__data--section {
+  position: absolute;
+  top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__text {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.card__text--normal {
+  font-weight: normal;
+  color: var(--Dark-grey);
+}
+
+.card__footer {
+  height: 25%;
+  border-top: 1px solid var(--slow-grey);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card__scores {
+  text-align: center;
+}
+.card__text--small {
+  font-size: 0.8em;
+}
