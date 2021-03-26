@@ -1,0 +1,20 @@
+.header {
+  grid-row: 1 / 2;
+  grid-column: grid-start / grid-end;
+
+  &__title {
+    color: var(--color-primary-blue);
+    font-weight: 700;
+  }
+
+  &__span {
+    color: var(--color-primary-green);
+    display: block;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+
+  &__p {
+    color: var(--color-neutral-grayishblue);
+  }
+}

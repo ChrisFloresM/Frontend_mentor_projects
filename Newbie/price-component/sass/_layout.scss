@@ -1,0 +1,32 @@
+.content-box {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: minmax(min-content, 45%) minmax(min-content, 55%);
+  grid-template-columns: [grid-start] 50% [grid-mid] 50% [grid-end];
+  // align-content: center;
+  justify-content: center;
+  font-size: 2.5rem;
+
+  & > * {
+    padding: 5rem;
+  }
+
+  @media only screen and (max-width: 600px) {
+    height: auto;
+    grid-template-rows: repeat(3, min-content);
+  }
+}
+
+section,
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.section__heading {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-white);
+}

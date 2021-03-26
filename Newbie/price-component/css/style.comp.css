@@ -1,0 +1,116 @@
+/* 
+Reponsive: 
+- Mobile: 375px
+- Desktop: 1440px 
+
+typo: 
+-font-size: 16px
+-font-family: 'Karla', sans-serif;
+*/
+/* Variables */
+:root {
+  --color-primary-blue: hsl(179, 62%, 43%);
+  --color-primary-blue-light: hsl(179, 62%, 50%);
+  --color-primary-green: hsl(71, 73%, 54%);
+  --color-neutral-grey: hsl(204, 43%, 93%);
+  --color-neutral-grayishblue: hsl(218, 22%, 67%);
+  --color-white: hsl(100, 100%, 100%); }
+
+html {
+  font-size: 52.5%;
+  font-family: Karla, 'sans-serif'; }
+  @media only screen and (max-width: 850px) {
+    html {
+      font-size: 45%; } }
+
+.section-price__btn {
+  width: 100%;
+  padding: 2rem 0;
+  background-color: var(--color-primary-green);
+  color: var(--color-white);
+  border-radius: 10px;
+  border: none;
+  box-shadow: 1px 10px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer; }
+
+.header {
+  grid-row: 1 / 2;
+  grid-column: grid-start / grid-end; }
+  .header__title {
+    color: var(--color-primary-blue);
+    font-weight: 700; }
+  .header__span {
+    color: var(--color-primary-green);
+    display: block;
+    font-weight: 700;
+    margin-bottom: 2rem; }
+  .header__p {
+    color: var(--color-neutral-grayishblue); }
+
+.content-box {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: minmax(min-content, 45%) minmax(min-content, 55%);
+  grid-template-columns: [grid-start] 50% [grid-mid] 50% [grid-end];
+  justify-content: center;
+  font-size: 2.5rem; }
+  .content-box > * {
+    padding: 5rem; }
+  @media only screen and (max-width: 600px) {
+    .content-box {
+      height: auto;
+      grid-template-rows: repeat(3, min-content); } }
+
+section,
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center; }
+
+.section__heading {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-white); }
+
+.section-info {
+  background-color: var(--color-primary-blue-light);
+  grid-row: 2 / 3;
+  grid-column: grid-mid/ grid-end; }
+  .section-info__list {
+    list-style: none; }
+  .section-info__item {
+    color: var(--color-neutral-grey);
+    line-height: 3.5rem; }
+  @media only screen and (max-width: 600px) {
+    .section-info {
+      grid-row: 3 / 4;
+      grid-column: grid-start / grid-end; } }
+
+.section-price {
+  background-color: var(--color-primary-blue);
+  grid-column: grid-start / grid-mid; }
+  .section-price__fee {
+    margin-bottom: 2.2rem;
+    display: flex;
+    align-items: center; }
+  .section-price__price {
+    font-size: 6rem;
+    font-weight: 700;
+    margin-right: 1.5rem;
+    color: var(--color-white); }
+  .section-price__month {
+    color: var(--color-neutral-grey); }
+  .section-price__text {
+    color: var(--color-white); }
+  @media only screen and (max-width: 600px) {
+    .section-price {
+      grid-row: 2 / 3;
+      grid-column: grid-start / grid-end; } }
+
+.u-margin-bottom {
+  margin: 0; }
+  .u-margin-bottom--h {
+    margin-bottom: 3.5rem; }
+  .u-margin-bottom--l {
+    margin-bottom: 3rem; }

@@ -1,0 +1,31 @@
+/* 
+Reponsive: 
+- Mobile: 375px
+- Desktop: 1440px 
+
+typo: 
+-font-size: 16px
+-font-family: 'Karla', sans-serif;
+*/
+
+/* Variables */
+
+:root {
+  --color-primary-blue: hsl(179, 62%, 43%);
+  --color-primary-blue-light: hsl(179, 62%, 50%);
+  --color-primary-green: hsl(71, 73%, 54%);
+
+  --color-neutral-grey: hsl(204, 43%, 93%);
+  --color-neutral-grayishblue: hsl(218, 22%, 67%);
+
+  --color-white: hsl(100, 100%, 100%);
+}
+
+html {
+  font-size: 52.5%; //10px;
+  font-family: Karla, 'sans-serif';
+
+  @media only screen and (max-width: 850px) {
+    font-size: 45%;
+  }
+}

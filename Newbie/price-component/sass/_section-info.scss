@@ -1,0 +1,19 @@
+.section-info {
+  background-color: var(--color-primary-blue-light);
+  grid-row: 2 / 3;
+  grid-column: grid-mid/ grid-end;
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    color: var(--color-neutral-grey);
+    line-height: 3.5rem;
+  }
+
+  @media only screen and (max-width: 600px) {
+    grid-row: 3 / 4;
+    grid-column: grid-start / grid-end;
+  }
+}
