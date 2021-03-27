@@ -1,0 +1,54 @@
+.reviews {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-column-gap: 2rem;
+
+  &__card {
+    background-color: $color-primary-magenta;
+    color: $color-white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 3rem;
+    font-size: 1.3rem;
+
+    &--2 {
+      transform: translateY(1.5rem);
+    }
+
+    &--3 {
+      transform: translateY(3rem);
+    }
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 3rem;
+  }
+
+  &__user-info {
+    margin-left: 2rem;
+  }
+
+  &__picture {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+  }
+
+  &__name {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    font-size: inherit;
+  }
+
+  &__role {
+    color: $color-primary-pink;
+  }
+
+  &__text {
+    line-height: 2;
+  }
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Christian Flores" />
+
+    <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png" />
+
+    <!-- Font: Spartan -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheets -->
+    <!-- <link rel="stylesheet" href="css/normalize.css" /> -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Frontend Mentor | Social proof section</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+
+  <body>
+    <picture class="bg-desktop bg-desktop--top">
+      <source media="(max-width: 600px)" srcset="assets/images/bg-pattern-top-mobile.svg" />
+      <source media="(min-width: 601px)" srcset="assets/images/bg-pattern-top-desktop.svg" />
+      <img src="assets/images/bg-pattern-top-desktop.svg" alt="bg-top-desktop" />
+    </picture>
+    <picture class="bg-desktop bg-desktop--bot">
+      <source media="(max-width: 600px)" srcset="assets/images/bg-pattern-bottom-mobile.svg" />
+      <source media="(min-width: 601px)" srcset="assets/images/bg-pattern-bottom-desktop.svg" />
+      <img src="assets/images/bg-pattern-bot-desktop.svg" alt="bg-top-desktop" />
+    </picture>
+    <article class="content">
+      <div class="content__container">
+        <header class="info">
+          <h1 class="info__header">10,000+ of our users love our products.</h1>
+          <p class="info__text">
+            We only provide great products combined with excellent customer service. See what our satisfied
+            customers are saying about our services.
+          </p>
+        </header>
+        <section class="rates">
+          <div class="rates__rate rates__rate--1">
+            <div class="rates__icon-container">
+              <svg class="rates__icon">
+                <use xlink:href="assets/images/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="rates__icon">
+                <use xlink:href="assets/images/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="rates__icon">
+                <use xlink:href="assets/images/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="rates__icon">
+                <use xlink:href="assets/images/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="rates__icon">
+                <use xlink:href="assets/images/sprite.svg#icon-star"></use>
+              </svg>
+            </div>
+            <p class="rates__text">Rated 5 Stars in Reviews</p>
+          </div>
+          <div class="rates__rate rates__rate--2">
+            <div class="rates__icon-container">
+              <svg class="rates__icon">
+                <use xlink:href="assets/images/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="rates__icon">
+                <use xlink:href="assets/images/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="rates__icon">
+                <use xlink:href="assets/images/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="rates__icon">
+                <use xlink:href="assets/images/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="rates__icon">
+                <use xlink:href="assets/images/sprite.svg#icon-star"></use>
+              </svg>
+            </div>
+            <p class="rates__text">Rated 5 Stars in Report Guru</p>
+          </div>
+          <div class="rates__rate rates__rate--3">
+            <div class="rates__icon-container">
+              <svg class="rates__icon">
+                <use xlink:href="assets/images/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="rates__icon">
+                <use xlink:href="assets/images/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="rates__icon">
+                <use xlink:href="assets/images/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="rates__icon">
+                <use xlink:href="assets/images/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="rates__icon">
+                <use xlink:href="assets/images/sprite.svg#icon-star"></use>
+              </svg>
+            </div>
+            <p class="rates__text">Rated 5 Stars in BestTech</p>
+          </div>
+        </section>
+      </div>
+      <main class="reviews">
+        <article class="reviews__card reviews__card--1">
+          <header class="reviews__user">
+            <img class="reviews__picture" src="assets/images/image-colton.jpg" alt="Colton" />
+            <div class="reviews__user-info">
+              <h2 class="reviews__name">Colton Smith</h2>
+              <span class="reviews__role">Verified Buyer</span>
+            </div>
+          </header>
+          <p class="reviews__text">
+            "We needed the same printed design as the one we had ordered a week prior. Not only did they find
+            the original order, but we also received it in time. Excellent!"
+          </p>
+        </article>
+        <article class="reviews__card reviews__card--2">
+          <header class="reviews__user">
+            <img class="reviews__picture" src="assets/images/image-irene.jpg" alt="Irene" />
+            <div class="reviews__user-info">
+              <h2 class="reviews__name">Irene Roberts</h2>
+              <span class="reviews__role">Verified Buyer</span>
+            </div>
+          </header>
+          <p class="reviews__text">
+            "Customer service is always excellent and very quick turn around. Completely delighted with the
+            simplicity of the purchase and the speed of delivery."
+          </p>
+        </article>
+        <article class="reviews__card reviews__card--3">
+          <header class="reviews__user">
+            <img class="reviews__picture" src="assets/images/image-anne.jpg" alt="Anne" />
+            <div class="reviews__user-info">
+              <h2 class="reviews__name">Anne Wallace</h2>
+              <span class="reviews__role">Verified Buyer</span>
+            </div>
+          </header>
+          <p class="reviews__text">
+            "Put an order with this company and can only praise them for the very high standard. Will
+            definitely use them again and recommend them to everyone!"
+          </p>
+        </article>
+      </main>
+    </article>
+  </body>
+</html>

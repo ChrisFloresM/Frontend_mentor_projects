@@ -1,0 +1,14 @@
+.info {
+  &__header {
+    font-size: 5rem;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 1rem;
+    color: $color-primary-magenta;
+  }
+
+  &__text {
+    color: $color-gray-mag-dark;
+    line-height: 1.5;
+  }
+}
