@@ -1,0 +1,44 @@
+html {
+  font-size: 62.5%; }
+
+body {
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif; }
+
+.bold {
+  font-weight: 600; }
+
+.light {
+  font-weight: 200; }
+
+.color-blue-dark {
+  color: #4c4e61; }
+
+.color-grayish-blue {
+  color: #a3a5ae; }
+
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  padding: 5rem 12rem;
+  grid-row-gap: 5rem; }
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.main {
+  background-color: crimson; }
+
+.header__heading {
+  margin-bottom: 2rem; }
+  .header__heading--bold {
+    display: block;
+    margin-top: 0.3em; }
+
+.header__text {
+  text-align: center;
+  width: 45%;
+  line-height: 1.5; }

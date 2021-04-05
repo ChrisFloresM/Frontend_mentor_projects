@@ -1,0 +1,43 @@
+// ======================================================== Variables ===================
+// Primary colors
+$color-primary-red: hsl(0, 78%, 62%);
+$color-primary-cyan: hsl(180, 62%, 55%);
+$color-primary-orange: hsl(34, 97%, 64%);
+$color-primary-blue: hsl(212, 86%, 64%);
+
+// Neutral colors
+$color-very-dark-blue: hsl(234, 12%, 34%);
+$color-grayish-blue: hsl(229, 6%, 66%);
+$color-very-light-gray: hsl(0, 0%, 98%);
+
+//======================================================== Media queries ===================
+
+// - Mobile: 375px
+// - Desktop: 1440px
+
+//==================== General styles =======================================
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+// Utility classes
+.bold {
+  font-weight: 600;
+}
+
+.light {
+  font-weight: 200;
+}
+
+.color-blue-dark {
+  color: $color-very-dark-blue;
+}
+
+.color-grayish-blue {
+  color: $color-grayish-blue;
+}

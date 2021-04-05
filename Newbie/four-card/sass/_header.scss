@@ -1,0 +1,15 @@
+.header {
+  &__heading {
+    &--bold {
+      display: block;
+      margin-top: 0.3em;
+    }
+    margin-bottom: 2rem;
+  }
+
+  &__text {
+    text-align: center;
+    width: 45%;
+    line-height: 1.5;
+  }
+}
