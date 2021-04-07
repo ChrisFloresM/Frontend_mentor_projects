@@ -41,3 +41,17 @@ body {
 .color-grayish-blue {
   color: $color-grayish-blue;
 }
+
+//============================== mixins ==================================================
+@mixin top-colored($color) {
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 0.4rem;
+    width: 100%;
+    background-color: $color;
+  }
+}
