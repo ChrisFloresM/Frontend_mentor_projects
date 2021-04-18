@@ -1,5 +1,6 @@
 .header {
   &__heading {
+    text-align: center;
     &--bold {
       display: block;
       margin-top: 0.3em;
@@ -11,5 +12,13 @@
     text-align: center;
     width: 45%;
     line-height: 1.5;
+
+    @media only screen and (max-width: 500px) {
+      width: 100%;
+    }
   }
+
+  // @media only screen and (max-width: 500px) {
+  //   font-size: 1.5rem;
+  // }
 }
