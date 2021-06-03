@@ -1,0 +1,32 @@
+@use "../abstracts" as *;
+
+// ======================= info - heading =================
+.info__heading {
+  font-size: 3.5rem;
+  font-weight: $bold-700;
+}
+
+.highlight {
+  color: $accent;
+}
+// ========================= info - paragraph ===============
+.info__text {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: $main-paragraph;
+}
+
+// ========================== info - stats ==================
+
+.info__stats {
+  &--stat {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: $stat-headings;
+  }
+}
+.stat_number {
+  font-size: 2rem;
+  font-weight: $bold-700;
+  color: $white-color;
+}

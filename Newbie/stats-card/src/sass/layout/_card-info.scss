@@ -1,0 +1,56 @@
+@use "../abstracts" as *;
+
+.info {
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+  padding: 4vw;
+  padding-top: 3vw;
+  padding-right: 5vw;
+
+  &__text {
+    margin-bottom: 5vw;
+  }
+
+  &__stats {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    &--stat:not(:last-child) {
+      margin-right: 6.5rem;
+
+      @include respond(tab-port) {
+        margin-right: 0;
+        margin-bottom: 3.5rem;
+      }
+    }
+
+    @include respond(tab-port) {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+  }
+
+  @include respond(tab-port) {
+    text-align: center;
+  }
+
+  @include respond(phone) {
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
+  }
+}
+
+.stat_number {
+  display: block;
+  margin-bottom: 0.5rem;
+}

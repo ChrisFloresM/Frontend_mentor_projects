@@ -1,0 +1,24 @@
+@use "../abstracts" as *;
+
+.img {
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      right bottom,
+      from($accent-transparent),
+      to($accent-transparent)
+    ),
+    url(../assets/img/image-header-desktop.jpg);
+  background-image: -o-linear-gradient(left top, $accent-transparent, $accent-transparent),
+    url(../assets/img/image-header-desktop.jpg);
+  background-image: linear-gradient(to right bottom, $accent-transparent, $accent-transparent),
+    url(../assets/img/image-header-desktop.jpg);
+  background-size: cover;
+  grid-row: 1 / -1;
+  grid-column: 2 / 3;
+
+  @include respond(phone) {
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+  }
+}
